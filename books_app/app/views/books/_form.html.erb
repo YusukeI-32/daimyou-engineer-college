@@ -11,27 +11,31 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :タイトル %>
-    <%= form.text_field :title %>
-  </div>
+  <div class="container" >
+  
+    <div class="form_group">
+      <%= form.label :タイトル , class: "control-label"%>
+      <%= form.text_field :title, class: "form-control" %>
+    </div>
 
-  <div class="field">
-    <%= form.label :詳細 %>
-    <%= form.text_area :memo %>
-  </div>
+    <div class="form_group">
+      <%= form.label :詳細 , class: "control-label"%>
+      <%= form.text_area :memo , class: "form-control" %>
+    </div>
 
-  <div class="field">
-    <%= form.label :著者 %>
-    <%= form.text_field :author %>
-  </div>
+    <div class="form_group">
+      <%= form.label :著者 , class: "control-label" %>
+      <%= form.text_field :author , class: "form-control" %>
+    </div>
 
-  <div class="field">
-    <%= form.label :画像 %>
-    <%= form.file_field :picture %>
-  </div>
+    <div class="form_group ">
+      <%= form.label :画像 , class: "control-label" %>
+      <%= form.file_field :picture , class: "form-control-file" %>
+    </div>
 
-  <div class="btn">
-    <%= form.submit  :'登録' ,class:'btn btn-primary' %>
+    <div class="btn  d-flex justify-content-center">
+      <%= form.submit  :'登録' ,class:'btn btn-primary ' %>
+    </div>
+
   </div>
 <% end %>
