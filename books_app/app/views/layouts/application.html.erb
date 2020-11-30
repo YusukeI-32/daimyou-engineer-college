@@ -19,11 +19,11 @@
       <p class="text-right">
         <% if user_signed_in? %>
           ようこそ <strong><%= current_user.email %></strong>
-          <%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'navbar-link'  %>
-        <% else %>
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'navbar-link'  %>
+       <% else %>
           <%= link_to "サインアップ", new_user_registration_path, class: 'navbar-link'  %> |
           <%= link_to "ログイン", new_user_session_path, class: 'navbar-link'  %>
-        <% end %>
+        <% end %> 
       </p>
   
    </div> 
